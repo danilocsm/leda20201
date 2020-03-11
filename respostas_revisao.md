@@ -25,15 +25,15 @@ instanceof é necessário para sabermos qual a instanciação de um determiando 
 5. Interfaces podem ser comparadas a um tipo de contrato entre as classes que a implementam e a própria interface. Toda classe que implementa
 uma interface deve implementar seus métodos. As classes abstratas não requerem esse tipo de comportamento entre as classes filhas. Exemplo
 da interface Map do java.
-6.
-..*. A classe E deve implementar '''java public abstract m2(double x);''', '''java public abstract void m3(String x);'''e '''java public abstract void m4();'''.
-..*. A classe D deve implementar '''java public abstract void m1();''', '''java public abstract void m1();''', '''java public abstract void m3(String x);'''
-..*. Não, pois a classe E implementa a interface I1(pela herança de A), logo ela pode ser instanciada.
-..*. '''java
+6. 
+        1.A classe E deve implementar '''java public abstract m2(double x);''', '''java public abstract void m3(String x);'''e '''java public abstract void m4();'''.
+        2. A classe D deve implementar '''java public abstract void m1();''', '''java public abstract void m1();''', '''java public abstract void m3(String x);'''
+        3. Não, pois a classe E implementa a interface I1(pela herança de A), logo ela pode ser instanciada.
+        4.'''java
         I1 x = new D();
         x.m3("5");
         ((A)x).m2(2.0);
         E y = (E)x;
         I2 k = (C)x;
      '''
-..*. false, true, true, true, true
+        5. false, true, true, true, true
