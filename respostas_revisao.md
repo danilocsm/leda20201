@@ -31,10 +31,10 @@ da interface Map do java.
         3. Não, pois a classe E implementa a interface I1(pela herança de A), logo ela pode ser instanciada.
         4.
         '''java
-        I1 x = new D();
-        x.m3("5");
-        ((A)x).m2(2.0);
-        E y = (E)x;
-        I2 k = (C)x;
+                I1 x = new D();
+                x.m3("5");
+                ((A)x).m2(2.0);
+                E y = (E)x;
+                I2 k = (C)x;
         '''
         5. false, true, true, true, true
